@@ -86,43 +86,35 @@
 
 .home_section {
 	background-color: #11b0c6;
-	min-height: 600px;
 }
 
 .business_section {
 	background-color: #f58b3b;
-	min-height: 900px;
 }
 
 .people_section {
 	background-color: #6c9bf3;
-	min-height: 900px;
 }
 
 .partner_section {
 	background-color: #ef6284;
-	min-height: 900px;
 }
 
 .hiring_section {
 	background-color: #737ef6;
-	min-height: 900px;
 }
 
 .events_section {
 	background-color: #8ab71b;
-	min-height: 900px;
 }
 
 .contact_section {
 	background-color: #11b0c6;
-	min-height: 900px;
 }
 
 .home_icon {
 	position: absolute;
 	top: 40%;
-	left: 30%;
 	width: 40%;
 	max-width: 511px;
 }
