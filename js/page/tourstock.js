@@ -1,6 +1,6 @@
 $(function() {
 	var winHeight = $(window).height(),
-		sectionHeight = winHeight > 900 ? winHeight : 900,
+		sectionHeight = /*winHeight > 900 ? winHeight : 900*/'100%',
 		partnerFlag = true,
 		eventsFlag = true;
 alert(winHeight)
