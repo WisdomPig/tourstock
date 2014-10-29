@@ -29,7 +29,7 @@
 		</div>
 		<div id="fullpage">
 			<section data-index="0" class="section home_section" id="homeSection">
-				<img class="img_rate home_img" src="img/index.png" data-rate="0.6">
+				<img class="img_rate home_img" src="img/index.png" data-rate="0.6" data-o-width="511" data-o-height="178">
 				<div id="arrowDown" class="arrow_down">
 					<p class="arrow_down_text">MOUSE</p>
 					<i class="arrow_down_icon"></i>
@@ -37,7 +37,7 @@
 			</section>
 			<section data-index="1" class="section business_section" id="businessSection">
 				<div class="our_business">
-					<img class="img_rate our_business_img" src="img/our-business.png" data-rate="0.9">
+					<img class="img_rate our_business_img" src="img/our-business.png" data-rate="0.9" data-o-width="944" data-o-height="324">
 					<p class="our_business_text">Tourstock Inc. is an OTA based in New York USA, with offices in Hong Kong, Beijing and Shenzhen, China. We’re a team of travel-loving engineers and developers, specializing in providing Chinese travelers with all-around travel services for their overseas tours.</p>
 				</div>
 			</section>
@@ -174,25 +174,22 @@
 		$(function() {
 			$('#fullpage').fullpage();
 
-			$('.img_rate').each(function() {
-				var that = this;
-
-				that.onload = function() {
+			window.onload = function() {
+				$('.img_rate').each(function() {
 					var _this = $(this),
+						rate = _this.data('rate'),
 						winW = $(window).width(),
 						winH = $(window).height(),
-						width = winW * _this.data('rate') < _this.width() ? winW * _this.data('rate') : _this.width(),
-						height = _this.height();
+						toW = _this.data('o-width'),
+						toH = _this.data('o-height'),
+						tW = winW * rate < toW ? winW * rate : toW,
+						tH = winW * rate < toW ? toH * rate : toH;
 
 					_this.css({
-						'left': (winW - width) / 2,
-						'top': (winH - height) / 2
+						'left': (winW - tW) / 2,
+						'top': (winH - tH) / 2
 					}).show();;
-				}
-			});
-
-			window.onload = function() {
-				$('.img_rate').show();	//bug fix
+				});
 			}
 		});
 		</script>
