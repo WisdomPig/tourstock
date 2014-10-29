@@ -115,6 +115,7 @@
 .home_icon {
 	position: absolute;
 	top: 40%;
+	left: 30%;
 	width: 40%;
 	max-width: 511px;
 }
