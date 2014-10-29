@@ -18,9 +18,9 @@
 }
 /* 版本过低 end */
 
-.contact_us_title, .rocket, .nav, .nav_logo, .home_icon, .arrow_down_icon, .our_business_img, .our_people_title, .our_people_img, .our_partner_title, .hiring_title, .hiring_box li, .events_title {
+/*.contact_us_title, .rocket, .nav, .nav_logo, .home_icon, .arrow_down_icon, .our_business_img, .our_people_title, .our_people_img, .our_partner_title, .hiring_title, .hiring_box li, .events_title {
 	background-image: url(../../img/all.png);
-}
+}*/
 
 /* nav */
 .nav {
@@ -123,12 +123,9 @@
 	position: absolute;
 	top: 50%;
 	left: 50%;
-	margin-top: -90px;
+	width: 40%;
 	margin-left: -256px;
-	width: 511px;
-	height: 180px;
-	background-repeat: no-repeat;
-	background-position: -487px 0;
+	max-width: 511px;
 }
 
 .arrow_down {
