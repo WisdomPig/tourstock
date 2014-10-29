@@ -176,10 +176,19 @@
 			$('#fullpage').fullpage();
 
 			$('.img_rate').each(function() {
-				var _this = this;
+				var that = this;
 
-				_this.onload = function() {
-					alert(this.width)
+				that.onload = function() {
+					var _this = $(this),
+						winW = $(window).width(),
+						winH = $(window).height(),
+						width = winW * _this.data('rate') < _this.width() ? winW * _this.data('rate') : _this.width(),
+						height = _this.height();
+
+					_this.css({
+						'left': (winW - width) / 2,
+						'top': (winH - height) / 2
+					}).show();;
 				}
 			});
 		});
