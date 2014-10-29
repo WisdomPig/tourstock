@@ -112,6 +112,10 @@
 	background-color: #11b0c6;
 }
 
+.img_rate {
+	display: none;
+}
+
 .home_icon {
 	position: absolute;
 	top: 40%;
