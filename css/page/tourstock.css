@@ -21,12 +21,6 @@
 .contact_us_title, .rocket, .nav, .nav_logo, .home_icon, .arrow_down_icon, .our_business_img, .our_people_title, .our_people_img, .our_partner_title, .hiring_title, .hiring_box li, .events_title {
 	background-image: url(../../img/all.png);
 }
-@media screen and (max-width: 600px) {
-	.contact_us_title, .rocket, .nav, .nav_logo, .home_icon, .arrow_down_icon, .our_business_img, .our_people_title, .our_people_img, .our_partner_title, .hiring_title, .hiring_box li, .events_title {
-		background-image: url(../../img/all.png);
-		background-size: 500px auto;
-	}
-}
 
 /* nav */
 .nav {
