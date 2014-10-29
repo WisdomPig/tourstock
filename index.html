@@ -171,27 +171,34 @@
 		<script type="text/javascript" src="./js/common/jquery.fullPage.min.js"></script>
 		<!--<script type="text/javascript" src="./js/page/tourstock.js"></script>-->
 		<script type="text/javascript">
-		$(function() {
+		$(function($, win, doc, undefined) {
 			$('#fullpage').fullpage();
 
-			window.onload = function() {
+			$(win).on('load resize', function() {
+				imgOffsetFix();
+			});
+
+			function imgOffsetFix() {
 				$('.img_rate').each(function() {
 					var _this = $(this),
 						rate = _this.data('rate'),
-						winW = $(window).width(),
-						winH = $(window).height(),
+						winW = $(win).width(),
+						winH = $(win).height(),
 						toW = _this.data('o-width'),
 						toH = _this.data('o-height'),
 						tW = winW * rate < toW ? winW * rate : toW,
 						tH = winW * rate < toW ? toH * rate : toH;
 
-					_this.css({
+					_this
+					.hide()
+					.css({
 						'left': (winW - tW) / 2,
 						'top': (winH - tH) / 2
-					}).show();;
+					})
+					.show();;
 				});
 			}
-		});
+		}(jQuery, window, document));
 		</script>
 	</body>
 </html>
