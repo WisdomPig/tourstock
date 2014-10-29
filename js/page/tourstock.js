@@ -1,9 +1,9 @@
 $(function() {
 	var winHeight = $(window).height(),
-		sectionHeight = /*winHeight > 900 ? winHeight : 900*/'100%',
+		sectionHeight = winHeight > 900 ? winHeight : 900,
 		partnerFlag = true,
 		eventsFlag = true;
-alert(winHeight)
+
     $('.section, .our_partner, .our_people, .events_wrapper, .contact_us').css('height', sectionHeight);
     $('#homeSection').css('height', winHeight);
 
