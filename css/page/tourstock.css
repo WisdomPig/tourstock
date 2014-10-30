@@ -62,7 +62,7 @@
 .our_email, .portal {color: #fff885;text-decoration: underline;}
 .our_partner_bg_left, .our_partner_bg_right {position: absolute;top: 0;left: 0;width: 50%;height: 100%;background-image: url(../../img/bg01.jpg);background-repeat: repeat-x;background-position:  0 bottom;}
 .our_partner_bg_right {left: 50%;background-image: url(../../img/bg02.jpg);background-repeat: repeat-x;background-position:  0 bottom;}
-.our_partner_img {position: absolute;width: 90%;height: 508px;max-width: 1000px;}
+.our_partner_img {position: absolute;width: 90%;max-width: 1000px;}
 .increase_step {position: absolute;z-index: 100;text-align: center;}
 .increase_num {position: relative;color: #fff885;font-weight: 700;}
 .increase_dollar {position: relative;color: #fff;}
