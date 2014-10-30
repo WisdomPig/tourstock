@@ -37,6 +37,7 @@
 			</section>
 			<section data-index="1" class="section business_section" id="businessSection">
 				<div class="our_business">
+					<img class="offset_fix our_business_title" src="img/title-our-business.png" data-rate="0.2" data-o-width="267" data-o-height="33" data-pos="top">
 					<img class="offset_fix our_business_img" src="img/our-business.png" data-rate="0.9" data-o-width="944" data-o-height="324" data-pos="center">
 					<p class="offset_fix our_business_text" data-rate="0.7" data-o-width="780" data-o-height="75" data-pos="bottom">Tourstock Inc. is an OTA based in New York USA, with offices in Hong Kong, Beijing and Shenzhen, China. We’re a team of travel-loving engineers and developers, specializing in providing Chinese travelers with all-around travel services for their overseas tours.</p>
 				</div>
@@ -190,9 +191,9 @@
 						tW = winW * rate < toW ? winW * rate : toW,
 						tH = winW * rate < toW ? toH * rate : toH,
 						posMap = {
-							'top': {'left': (winW - tW) / 2, 'top': 0},
+							'top': {'left': (winW - tW) / 2, 'top': 30},
 							'center': {'left': (winW - tW) / 2, 'top': (winH - tH) / 2},
-							'bottom': {'left': (winW - tW) / 2, 'bottom': 0}
+							'bottom': {'left': (winW - tW) / 2, 'bottom': 30}
 						}
 
 					_this
