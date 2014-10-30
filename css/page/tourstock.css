@@ -36,7 +36,7 @@
 /* our business */
 .our_business {width: 950px;margin: 0 auto;}
 .our_business_img {position: absolute;width: 90%;max-width: 944px;}
-.our_business_text {position: absolute;width: 780px;font-size: 15px;line-height: 26px;color: #fff;}
+.our_business_text {position: absolute;width: 70%;font-size: 0.8em;line-height: 26px;color: #fff;}
 
 /* our people */
 .our_people {position: relative;width: 1000px;height: 100%;margin: 0 auto;background: url(../../img/people.png) no-repeat right bottom;}
