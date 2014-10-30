@@ -39,15 +39,14 @@
 				<div class="our_business">
 					<img class="offset_fix our_business_title" src="img/title-our-business.png" data-rate="0.2" data-o-width="267" data-o-height="33" data-pos="top">
 					<img class="offset_fix our_business_img" src="img/our-business.png" data-rate="0.9" data-o-width="944" data-o-height="324" data-pos="center">
-					<p class="offset_fix our_business_text" data-rate="0.7" data-o-width="780" data-o-height="75" data-pos="bottom">Tourstock Inc. is an OTA based in New York USA, with offices in Hong Kong, Beijing and Shenzhen, China. We’re a team of travel-loving engineers and developers, specializing in providing Chinese travelers with all-around travel services for their overseas tours.</p>
+					<p class="offset_fix our_business_text text" data-rate="0.7" data-o-width="780" data-o-height="75" data-pos="bottom">Tourstock Inc. is an OTA based in New York USA, with offices in Hong Kong, Beijing and Shenzhen, China. We’re a team of travel-loving engineers and developers, specializing in providing Chinese travelers with all-around travel services for their overseas tours.</p>
 				</div>
 			</section>
 			<section data-index="2" class="section people_section" id="peopleSction">
 				<div class="our_people">
-					<div class="people_white_space"></div>
-					<h1 class="our_people_title"></h1>
-					<p class="our_people_text">We are a team of travel-loving engineers, program and business developers. We are well-equipped with<br/>expertise in e-commerce, network technology, and online-travel business. Most important of all, we understand<br/>Chinese consumers and have extensive experiences and connections in the travel industry in China.</p>
-					<p class="our_people_text">We “hand-pick” and “stock” travel services/products that are most<br/>interesting to Chinese travelers, aiming to become the ultimate tour<br/>warehouse for the ever growing number of Chinese travelers who<br/>just love, love, and love to see the world. </p>
+					<img class="offset_fix our_people_title" src="img/title-our-people.png" data-rate="0.18" data-o-width="233" data-o-height="33" data-pos="top">
+					<p class="offset_fix our_people_text text" data-rate="0.7" data-o-width="780" data-o-height="260" data-pos="center">We are a team of travel-loving engineers, program and business developers. We are well-equipped with<br/>expertise in e-commerce, network technology, and online-travel business. Most important of all, we understand<br/>Chinese consumers and have extensive experiences and connections in the travel industry in China.<br/><br/><br/>We “hand-pick” and “stock” travel services/products that are most<br/>interesting to Chinese travelers, aiming to become the ultimate tour<br/>warehouse for the ever growing number of Chinese travelers who<br/>just love, love, and love to see the world. </p>
+					<img class="offset_fix our_people_img" src="img/people.png" data-rate="0.9" data-o-width="944" data-o-height="376" data-pos="bottom">
 				</div>
 			</section>
 			<section data-index="3" class="section partner_section" id="partnerSection">
@@ -191,9 +190,9 @@
 						tW = winW * rate < toW ? winW * rate : toW,
 						tH = winW * rate < toW ? toH * rate : toH,
 						posMap = {
-							'top': {'left': (winW - tW) / 2, 'top': 30},
+							'top': {'left': (winW - tW) / 2, 'top': 0},
 							'center': {'left': (winW - tW) / 2, 'top': (winH - tH) / 2},
-							'bottom': {'left': (winW - tW) / 2, 'bottom': 30}
+							'bottom': {'left': (winW - tW) / 2, 'bottom': 0}
 						}
 
 					_this
