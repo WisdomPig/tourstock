@@ -184,14 +184,16 @@
 						winW = $(win).width(),
 						winH = $(win).height(),
 						toW = _this.data('o-width'),
-						toH = _this.data('o-height'),
+						toH = _this.height(),
 						tW = winW * rate < toW ? winW * rate : toW,
-						tH = winW * rate < toW ? toH * rate : toH,
+						tH = winH * rate < toH ? toH * rate : toH,
 						posMap = {
 							'top': {'left': (winW - tW) / 2, 'top': 0},
 							'center': {'left': (winW - tW) / 2, 'top': (winH - tH) / 2},
 							'bottom': {'left': (winW - tW) / 2, 'bottom': 0}
-						}
+						};
+					console.log(winH)
+					console.log(toH)
 
 					_this
 					.css(posMap[pos])
