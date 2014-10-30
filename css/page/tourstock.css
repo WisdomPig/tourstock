@@ -29,14 +29,14 @@
 
 /* home page */
 .home_img {position: absolute;width: 60%;max-width: 511px;}
-.arrow_down {position: absolute;bottom: 0;left: 50%;margin-left: -30px;width: 10%;height: 75px;cursor: pointer;color: #fff;max-width: 60px;}
+.arrow_down {position: absolute;width: 10%;height: 75px;cursor: pointer;color: #fff;max-width: 60px;}
 .arrow_down_text {text-align: center;font-size: 13px;visibility: hidden;opacity: 0.7;filter: alpha(opacity: 70);-webkit-transition: all 1s linear;}
 .arrow_down_icon {position: absolute;display: block;left: 8px;top: 30px;width: 70%;opacity: 0.7;filter: alpha(opacity: 70);max-width: 43px;}
 
 /* our business */
 .our_business {width: 950px;margin: 0 auto;}
 .our_business_img {position: absolute;width: 90%;max-width: 944px;}
-.our_business_text {width: 780px;font-size: 15px;line-height: 26px;color: #fff;margin: 0 auto;padding-top: 120px;}
+.our_business_text {position: absolute;width: 780px;font-size: 15px;line-height: 26px;color: #fff;}
 
 /* our people */
 .our_people {position: relative;width: 1000px;height: 100%;margin: 0 auto;background: url(../../img/people.png) no-repeat right bottom;}

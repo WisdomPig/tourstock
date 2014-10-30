@@ -29,16 +29,16 @@
 		</div>
 		<div id="fullpage">
 			<section data-index="0" class="section home_section" id="homeSection">
-				<img class="img_rate home_img" src="img/index.png" data-rate="0.6" data-o-width="511" data-o-height="178">
-				<div id="arrowDown" class="arrow_down">
+				<img class="offset_fix home_img" src="img/index.png" data-rate="0.6" data-o-width="511" data-o-height="178" data-pos="center">
+				<div id="arrowDown" class="offset_fix arrow_down" data-rate="0.1" data-o-width="60" data-o-height="75" data-pos="bottom">
 					<p class="arrow_down_text">MOUSE</p>
 					<img class="arrow_down_icon" src="img/arrow-icon.png">
 				</div>
 			</section>
 			<section data-index="1" class="section business_section" id="businessSection">
 				<div class="our_business">
-					<img class="img_rate our_business_img" src="img/our-business.png" data-rate="0.9" data-o-width="944" data-o-height="324">
-					<p class="our_business_text">Tourstock Inc. is an OTA based in New York USA, with offices in Hong Kong, Beijing and Shenzhen, China. We’re a team of travel-loving engineers and developers, specializing in providing Chinese travelers with all-around travel services for their overseas tours.</p>
+					<img class="offset_fix our_business_img" src="img/our-business.png" data-rate="0.9" data-o-width="944" data-o-height="324" data-pos="center">
+					<p class="offset_fix our_business_text" data-rate="1" data-o-width="780" data-o-height="75" data-pos="bottom">Tourstock Inc. is an OTA based in New York USA, with offices in Hong Kong, Beijing and Shenzhen, China. We’re a team of travel-loving engineers and developers, specializing in providing Chinese travelers with all-around travel services for their overseas tours.</p>
 				</div>
 			</section>
 			<section data-index="2" class="section people_section" id="peopleSction">
@@ -179,22 +179,25 @@
 			});
 
 			function imgOffsetFix() {
-				$('.img_rate').each(function() {
+				$('.offset_fix').each(function() {
 					var _this = $(this),
-						rate = _this.data('rate'),
+						rate = _this.data('rate') || 1,
+						pos = _this.data('pos'),
 						winW = $(win).width(),
 						winH = $(win).height(),
 						toW = _this.data('o-width'),
 						toH = _this.data('o-height'),
 						tW = winW * rate < toW ? winW * rate : toW,
-						tH = winW * rate < toW ? toH * rate : toH;
+						tH = winW * rate < toW ? toH * rate : toH,
+						posMap = {
+							'top': {'left': (winW - tW) / 2, 'top': 0},
+							'center': {'left': (winW - tW) / 2, 'top': (winH - tH) / 2},
+							'bottom': {'left': (winW - tW) / 2, 'bottom': 0}
+						}
 
 					_this
 					.hide()
-					.css({
-						'left': (winW - tW) / 2,
-						'top': (winH - tH) / 2
-					})
+					.css(posMap[pos])
 					.show();;
 				});
 			}
