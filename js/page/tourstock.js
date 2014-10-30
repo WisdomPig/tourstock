@@ -110,21 +110,4 @@ $(function() {
 		});
 	}
 	setInterval(arrowBtnAnimate, 1500);
-
-	//events exchange
-	var eventsSwipe = Swipe(document.getElementById('eventsWrapper'), {
-		startSlide: 0,
-	  	speed: 400,
-	  	continuous: true,
-	  	disableScroll: false,
-	  	stopPropagation: false
-	});
-	$('.prev_events').click(function(e) {
-		e.preventDefault();
-		eventsSwipe.prev()
-	});
-	$('.next_events').click(function(e) {
-		e.preventDefault();
-		eventsSwipe.next()
-	});
 });
