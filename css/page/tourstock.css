@@ -57,8 +57,7 @@
 .our_people_img {position: absolute;width: 90%;max-width: 944px;}
 
 /* our partner */
-.our_partner {position: relative;width: 1000px;height: 100%;margin: 0 auto;}
-.our_partner_title {position: relative;z-index: 11;height: 33px;background-repeat: no-repeat;background-position: -556px -1249px;}
+.our_partner_title {position: absolute;width: 90%;max-width: 944px;}
 .our_partner_text {position: relative;z-index: 12;padding-top: 50px;font-size: 15px;line-height: 26px;color: #fff;}
 .our_email, .portal {color: #fff885;text-decoration: underline;}
 .our_partner_img {position: absolute;left: 0;background-image: url(../../img/increase.jpg);background-repeat: no-repeat;background-position: left bottom;}
