@@ -62,7 +62,7 @@
 .our_partner_text {position: absolute;width: 90%;max-width: 944px;}
 .our_email, .portal {color: #fff885;text-decoration: underline;}
 .our_partner_bg_left, .our_partner_bg_right {position: absolute;width: 90%;max-width: 1000px;}
-.our_partner_img {position: absolute;width: 100%;max-width: 1000px;}
+.our_partner_img, .hiring_img {position: absolute;width: 100%;max-width: 1000px;}
 .our_partner_img img {position: relative;width: 100%;z-index: 10;}
 .our_partner_img .line {position: absolute;top: 0;left: 0;z-index: 8;}
 .our_partner_bg_left, .our_partner_bg_right {
@@ -137,14 +137,10 @@
 .step_2014 .increase_dollar span {font-size: 16px;}
 
 /* we are hring */
-.we_are_hiring {width: 955px;margin: 0 auto;height: 100%;}
-.hiring_title {height: 33px;background-repeat: no-repeat;background-position: -710px -1830px;}
-.hiring_box {width: 100%;padding-top: 80px;}
-.hiring_box li {float: left;width: 466px;height: 198px;background-repeat: no-repeat;}
-.web_developer {background-position: 16px -1880px;background-color: #add745;}
-.ios_developer {background-position: -480px -1880px;background-color: #fa8e8e;}
-.android_developer {background-position: 16px -2121px;background-color: #f7c02d;}
-.product_manager {background-position: -480px -2121px;background-color: #45d7cb;}
+.hiring_title {position: absolute;width: 22%;max-width: 290px;overflow: hidden;}
+.hiring_box {float: left;width: 47%;margin-right: 6%;margin-bottom: 5%;}
+.hiring_box.even {margin-right: 0;}
+.hiring_box img {width: 100%;}
 
 /* events about us */
 .events_wrapper {width: 100%;height: 100%;background: url(../../img/wave.png) repeat-x center bottom;}
