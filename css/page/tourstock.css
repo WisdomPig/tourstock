@@ -146,7 +146,7 @@
 .events_wrapper {width: 100%;height: 100%;background: url(../../img/wave.png) repeat-x center bottom;}
 .events {position: relative;width: 860px;height: 100%;margin: 0 auto;}
 .events_title {height: 33px;background-repeat: no-repeat;background-position: -861px -2345px;}
-.events_text {position: relative;z-index: 999;padding-top: 50px;font-size: 15px;line-height: 26px;color: #fff;}
+.events_text {position: relative;z-index: 999;padding-top: 5%;}
 .rocket {display: block;position: absolute;bottom: 0;right: 80px;width: 250px;height: 415px;background-repeat: no-repeat;background-position: 0 -2358px;}
 
 /* contact us */

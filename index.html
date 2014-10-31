@@ -67,15 +67,6 @@
 			<section data-index="4" class="section hiring_section" id="hiringSection">
 				<div class="we_are_hiring">
 					<img class="offset_fix hiring_title title" src="img/title-hiring.png" data-rate="0.22" data-o-width="290" data-o-height="33" data-pos="top">
-					<!-- <ul class="hiring_box clearfix">
-						<li class="web_developer"></li>
-						<li style="width: 16px;background: none;"></li>
-						<li class="ios_developer"></li>
-						<li style="height: 16px;width: 100%;background: none;"></li>
-						<li class="android_developer"></li>
-						<li style="width: 16px;background: none;"></li>
-						<li class="product_manager"></li>
-					</ul> -->
 					<div class="offset_fix hiring_img" data-rate="1" data-o-width="1000" data-o-height="508" data-pos="center">
 						<div class="hiring_box">
 							<img src="img/hire-web.jpg">
@@ -97,10 +88,24 @@
 					<div class="events">
 						<div class="partner_white_space"></div>
 						<h1 class="events_title"></h1>
-						<p class="events_text">2013.06<br/>Tourstock has secured financing from a top Internet and e-commerce venture capital firm.<br/>Owning to its strong management team, solid technology background and clear strategic<br/>vision, Tourstock has secured seed financing and ready for kick-off.</p>
-						<p class="events_text" style="padding-top: 30px;">2014.01<br/>Tourstock launched its official website to Chinese travelers: <a class="portal" href="http://www.woqu.com" target="_blank">www.woqu.com</a><br/>With a brand new design, a smooth shopping experience and a variety of travel products,<br/><a class="portal" href="http://www.woqu.com" target="_blank">www.woqu.com</a> gives travelers a place where they can find everything they had in mind,<br/>turning trip planning and booking into a simple and pleasant experience.</p>
-						<p class="events_text" style="padding-top: 30px;">2014.04<br/>Tourstock launched<a class="portal" href="http://www.woqu.com" target="_blank">www. woqu.com</a>V2.0 with multiple destinations, which provides more products<br/>and services for customers looking for extraordinary travel experiences.</p>
-						<p class="events_text" style="padding-top: 30px;">2014.05<br/>Tourstock Shenzhen moved to the new office based in Skyworth SEMI Design Mansion. <br/>The new office could accomandate its fast growing team with more than 150 staffs.</p>
+						<div class="swipe-wrapper">
+							<a class="prev_events" href="javascript:;"></a>
+							<a class="next_events" href="javascript:;"></a>
+							<div id="eventsWrapper" class="swipe">
+								<ul class="swipe-wrap">
+									<li>
+										<p class="events_text text">2013.06<br/>Tourstock has secured financing from a top Internet and e-commerce venture capital firm.<br/>Owning to its strong management team, solid technology background and clear strategic<br/>vision, Tourstock has secured seed financing and ready for kick-off.</p>
+										<p class="events_text text">2014.01<br/>Tourstock launched its official website to Chinese travelers: <a class="portal" href="http://www.woqu.com" target="_blank">www.woqu.com</a><br/>With a brand new design, a smooth shopping experience and a variety of travel products,<br/><a class="portal" href="http://www.woqu.com" target="_blank">www.woqu.com</a> gives travelers a place where they can find everything they had in mind,<br/>turning trip planning and booking into a simple and pleasant experience.</p>
+										<p class="events_text text">2014.04<br/>Tourstock launched<a class="portal" href="http://www.woqu.com" target="_blank">www. woqu.com</a>V2.0 with multiple destinations, which provides more products<br/>and services for customers looking for extraordinary travel experiences.</p>
+										<p class="events_text text">2014.05<br/>Tourstock Shenzhen moved to the new office based in Skyworth SEMI Design Mansion. <br/>The new office could accomandate its fast growing team with more than 150 staffs.</p>
+									</li>
+									<li>
+										<p class="events_text text">2014.09<br/>Tourstock received investment from Tencent along with Morningside Ventures Capital.<br/>This B round financing is worth 20 million $US.<br/>With the financing, Tourstock will start focusing on mobile devices and multi-destinations strategy.</p>
+										<p class="events_text text">2014.10<br/>Tourstock released two more destinations, offering a variety of exciting travel products in both Australia and New Zealand. </p>
+									</li>
+								</ul>
+							</div>
+						</div>
 						<i class="rocket"></i>
 					</div>
 				</div>
@@ -151,6 +156,7 @@
 		<script type="text/javascript" src="./js/common/jquery-1.11.0.min.js"></script>
 		<script type="text/javascript" src="./js/common/jquery.easing.min.js"></script>
 		<script type="text/javascript" src="./js/common/jquery.fullPage.min.js"></script>
+		<script type="text/javascript" src="./js/common/swipe.js"></script>
 		<script type="text/javascript">
 		$(function($, win, doc, undefined) {
 			$('#fullpage').fullpage({
@@ -197,6 +203,23 @@
 					.show();
 				});
 			}
+
+			//events exchange
+			var eventsSwipe = Swipe(document.getElementById('eventsWrapper'), {
+				startSlide: 0,
+			  	speed: 400,
+			  	continuous: true,
+			  	disableScroll: false,
+			  	stopPropagation: false
+			});
+			$('.prev_events').click(function(e) {
+				e.preventDefault();
+				eventsSwipe.prev()
+			});
+			$('.next_events').click(function(e) {
+				e.preventDefault();
+				eventsSwipe.next()
+			});
 		}(jQuery, window, document));
 		</script>
 	</body>
