@@ -158,7 +158,7 @@
 
 /* contact us */
 .contact_us_earth {position: absolute;width: 50%;max-width: 519px;}
-.contact_list {position: absolute;width: 50%;max-width: 519px;height: 50%;max-height: 519px;padding-top: 10%;}
+.contact_list {position: absolute;width: 80%;max-width: 800px;height: 50%;max-height: 519px;padding-top: 10%;}
 .contact_us_title {position: absolute;width: 50%;max-width: 250px;top: 20%;left: 15%;}
 .contact_list div {overflow: hidden;}
 .contact_list p {float: left;}
