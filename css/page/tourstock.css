@@ -138,8 +138,8 @@
 
 /* we are hring */
 .hiring_title {position: absolute;width: 22%;max-width: 290px;overflow: hidden;}
-.hiring_box {float: left;width: 47%;margin-right: 6%;margin-bottom: 5%;}
-.hiring_box.even {margin-right: 0;}
+.hiring_box {float: left;width: 47%;margin: 0 4% 5% 1%;}
+.hiring_box.even {margin: 0 1% 5% 0;}
 .hiring_box img {width: 100%;}
 
 /* events about us */
