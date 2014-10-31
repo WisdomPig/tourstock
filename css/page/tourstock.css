@@ -64,7 +64,7 @@
 .our_partner_img {position: absolute;width: 100%;max-width: 1000px;}
 .our_partner_bg_left, .our_partner_bg_right {
 	position: absolute;
-	top: 0;
+	bottom: 0;
 	left: 0;
 	width: 50%;
 	height: 100%;
