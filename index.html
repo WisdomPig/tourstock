@@ -50,10 +50,6 @@
 				</div>
 			</section>
 			<section data-index="3" class="section partner_section" id="partnerSection">
-				<!-- <img style="left: 0;" class="offset_fix our_partner_bg_left" src="img/partner-bg-left.jpg" data-rate="0.9" data-o-width="1000" data-o-height="508" data-pos="center">
-				<img style="left: auto;right: 0;" class="offset_fix our_partner_bg_right" src="img/partner-bg-right.jpg" data-rate="0.9" data-o-width="1000" data-o-height="508" data-pos="center"> -->
-				<!-- <div class="our_partner_bg_left"></div>
-				<div class="our_partner_bg_right"></div> -->
 				<div class="our_partner">
 					<img class="offset_fix our_partner_title title" src="img/title-be-partner.png" data-rate="0.9" data-o-width="944" data-o-height="33" data-pos="top">
 					<p class="offset_fix our_partner_text text" data-rate="0.9" data-o-width="944" data-o-height="260" data-pos="top"><br/><br/><br/>Tour Operators, Consolidators, DMOs, Shopping Malls, Activity Providers...<br/>We'd love to hear from you and share with you the business opportunity of<br/>the fast growing outbound travel market in China. You are more than welcome<br/>to contact us via the email : <span class="our_email">info@tourstock.com</span></p>
@@ -66,42 +62,6 @@
 						<img class="line" src="img/increase2012.png">
 						<img class="line" src="img/increase2013.png">
 						<img class="line" src="img/increase2014.png">
-						<!-- <div class="increase_step step_2008">
-							<p class="increase_num">45.8<span>M</span><em>( Number of Chinese Outbound Tourists, Million )</em></p>
-							<P class="increase_dollar">$39<span>B</span><em>( Expenditure in US$, Billion )</em></P>
-							<div class="increase_line"></div>
-						</div>
-						<div class="increase_step step_2009">
-							<p class="increase_num">47.5<span>M</span></p>
-							<P class="increase_dollar">$44<span>B</span></P>
-							<div class="increase_line"></div>
-						</div>
-						<div class="increase_step step_2010">
-							<p class="increase_num">57.4<span>M</span></p>
-							<P class="increase_dollar">$55<span>B</span></P>
-							<div class="increase_line"></div>
-						</div>
-						<div class="increase_step step_2011">
-							<p class="increase_num">70.3<span>M</span></p>
-							<P class="increase_dollar">$73<span>B</span></P>
-							<div class="increase_line"></div>
-						</div>
-						<div class="increase_step step_2012">
-							<p class="increase_num">83.2<span>M</span></p>
-							<P class="increase_dollar">$102<span>B</span></P>
-							<div class="increase_line"></div>
-						</div>
-						<div class="increase_step step_2013">
-							<p class="increase_num">90.7<span>M</span></p>
-							<P class="increase_dollar">$110<span>B</span></P>
-							<div class="increase_line"></div>
-						</div>
-						<div class="increase_step step_2014">
-							<p class="increase_num">>110<span>M</span></p>
-							<P class="increase_dollar">$120<span>B</span></P>
-							<div class="increase_line"></div>
-						</div>
-											</div> -->
 				</div>
 			</section>
 			<section data-index="4" class="section hiring_section" id="hiringSection">
@@ -178,10 +138,25 @@
 		<script type="text/javascript" src="./js/common/jquery-1.11.0.min.js"></script>
 		<script type="text/javascript" src="./js/common/jquery.easing.min.js"></script>
 		<script type="text/javascript" src="./js/common/jquery.fullPage.min.js"></script>
-		<!--<script type="text/javascript" src="./js/page/tourstock.js"></script>-->
 		<script type="text/javascript">
 		$(function($, win, doc, undefined) {
-			$('#fullpage').fullpage();
+			$('#fullpage').fullpage({
+				onLeave: function(index, nextIndex, direction){
+					if (nextIndex == 4) {
+						setTimeout(function() {
+							$('.line').animate({
+								'top': '-=50px' 
+							}, 800);
+						}, 1000);
+					}
+
+					if (index == 4) {
+						$('.line').animate({
+							'top': '+=50px' 
+						}, 800);
+					}
+				}
+			});
 
 			$(win).on('load resize', function() {
 				imgOffsetFix();
