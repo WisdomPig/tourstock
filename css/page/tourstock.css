@@ -63,7 +63,8 @@
 .our_email, .portal {color: #fff885;text-decoration: underline;}
 .our_partner_bg_left, .our_partner_bg_right {position: absolute;width: 90%;max-width: 1000px;}
 .our_partner_img {position: absolute;width: 100%;max-width: 1000px;}
-.our_partner_img img {width: 100%;}
+.our_partner_img img {position: relative;width: 100%;z-index: 10;}
+.our_partner_img .line {position: absolute;top: 0;left: 0;z-index: 8;}
 .our_partner_bg_left, .our_partner_bg_right {
 	position: absolute;
 	bottom: 0;
