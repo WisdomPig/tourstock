@@ -148,6 +148,12 @@
 .events_title {height: 33px;background-repeat: no-repeat;background-position: -861px -2345px;}
 .events_text {position: relative;z-index: 999;padding-top: 5%;}
 .rocket {display: block;position: absolute;bottom: 0;right: 80px;width: 250px;height: 415px;background-repeat: no-repeat;background-position: 0 -2358px;}
+.swipe-wrapper {position: relative;}
+.swipe {overflow: hidden;visibility: hidden;position: relative;}
+.swipe-wrap {overflow: hidden;position: relative;}
+.swipe-wrap > li {float:left;width:100%;position: relative;}
+.prev_events, .next_events {position: absolute;z-index: 100;display: block;top: 50%;left: -50px;margin-top: -25px;width: 50px;height: 50px;background-position: 15px -2995px;}
+.next_events {left: auto;right: -50px;background-position: 15px -2849px;}
 
 /* contact us */
 .contact_us {width: 560px;height: 520px;margin: 0 auto;background: url(../../img/earth.png) no-repeat 30px 140px;}
