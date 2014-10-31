@@ -50,6 +50,9 @@
 	.text {
 		font-size: 0.6em;
 	}
+	.c_label {
+		width: 50px;
+	}
 }
 
 /* our people */
