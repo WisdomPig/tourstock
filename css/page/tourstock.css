@@ -157,10 +157,10 @@
 .wave {position:absolute;width: 100%;}
 
 /* contact us */
-.contact_us {width: 560px;height: 520px;margin: 0 auto;background: url(../../img/earth.png) no-repeat 30px 140px;}
-.contact_us_title {height: 57px;width: 250px;background-repeat: no-repeat;background-position: -749px -2501px;margin: 0 auto;}
-.contact_list {margin-left: 155px;}
-.contact_list li p {float: left;font-size: 15px;height: 20px;line-height: 20px;color: #fff;}
-.c_label {width: 70px;}
-.white_space_li {height: 35px;}
-
+.contact_us_earth {position: absolute;width: 50%;max-width: 519px;}
+.contact_list {position: absolute;width: 50%;max-width: 519px;height: 50%;max-height: 519px;padding-top: 10%;}
+.contact_us_title {position: absolute;width: 50%;max-width: 250px;top: 20%;left: 15%;}
+.contact_list div {overflow: hidden;}
+.contact_list p {float: left;}
+.contact_info {position: absolute;top: 32%;left: 5%;}
+.c_label {width: 70px;height: 16px;}

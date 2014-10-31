@@ -107,48 +107,45 @@
 						</div>
 					</div>
 				</div>
-				<img class="offset_fix wave" src="img/wave.png" src="img/title-events.png" data-rate="1" data-o-width="1979" data-o-height="210" data-pos="bottom">
+				<img class="offset_fix wave" src="img/wave.png" data-rate="1" data-o-width="1979" data-o-height="210" data-pos="bottom">
 				<img class="offset_fix rocket" src="img/rocket.png"  data-rate="0.2" data-o-width="250" data-o-height="415" data-pos="bottom">
 			</section>
 			<section data-index="6" class="section contact_section" id="contactSection">
 				<div class="contact_us">
-					<div class="contact_white_space"></div>
-					<div class="white_space_li"></div>
-					<h1 class="contact_us_title"></h1>
-					<ul class="contact_list">
-						<li class="white_space_li"></li>
-						<li class="clearfix">
-							<p class="c_label">Tel : </p>
-							<p>+1 (917) 621 3212&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(USA)</p>
-						</li>
-						<li class="clearfix">
-							<p class="c_label"></p>
-							<p>+86 755 3680 5757&nbsp;(China)</p>
-						</li>
-						<li class="white_space_li"></li>
-						<li class="clearfix">
-							<p class="c_label">Fax : </p>
-							<p>+1 (917) 688 2588&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(USA)</p>
-						</li>
-						<li class="clearfix">
-							<p class="c_label"></p>
-							<p>+86 755 3667 7899&nbsp;(China)</p>
-						</li>
-						<li class="white_space_li"></li>
-						<li class="clearfix">
-							<p class="c_label">Email : </p>
-							<p>info@tourstock.com</p>
-						</li>
-						<li class="white_space_li"></li>
-						<li class="clearfix">
-							<p class="c_label">Address : </p>
-							<p>Suite 1022, 138 W 25th Street, New York, NY 10001, USA</p>
-						</li>
-						<li class="clearfix">
-							<p class="c_label"></p>
-							<p>4th Fl. West Tower, Skyworth SEMI Design Mansion,<br/>South Technology No. 4 Rd, High-Tech Industrial Park,<br/>Shenzhen, China</p>
-						</li>
-					</ul>
+					<img class="offset_fix contact_us_earth" src="img/earth.png" data-rate="0.5" data-o-width="519" data-o-height="519" data-pos="center">
+					<div class="offset_fix contact_list" data-rate="0.5" data-o-width="519" data-o-height="519" data-pos="center">
+						<img class="contact_us_title" src="img/title-contact.png">
+						<div class="contact_info text">
+							<div>
+								<p class="c_label">Tel : </p>
+								<p>+1 (917) 621 3212&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(USA)</p>
+							</div>
+							<div>
+								<p class="c_label"></p>
+								<p>+86 755 3680 5757&nbsp;(China)</p>
+							</div>
+							<div>
+								<p class="c_label">Fax : </p>
+								<p>+1 (917) 688 2588&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(USA)</p>
+							</div>
+							<div>
+								<p class="c_label"></p>
+								<p>+86 755 3667 7899&nbsp;(China)</p>
+							</div>
+							<div>
+								<p class="c_label">Email : </p>
+								<p>info@tourstock.com</p>
+							</div>
+							<div>
+								<p class="c_label">Address : </p>
+								<p>Suite 1022, 138 W 25th Street, New York, NY 10001, USA</p>
+							</div>
+							<div>
+								<p class="c_label"></p>
+								<p>4th Fl. West Tower, Skyworth SEMI Design Mansion,<br/>South Technology No. 4 Rd, High-Tech Industrial Park,<br/>Shenzhen, China</p>
+							</div>
+						</div>
+					</div>
 				</div>
 			</section>
 		</div>
@@ -208,7 +205,7 @@
 						toW = _this.data('o-width'),
 						toH = _this.height(),
 						tW = winW * rate < toW ? winW * rate : toW,
-						tH = winH * rate < toH ? toH * rate : toH,
+						tH = winH * rate < toH ? winH * rate : toH,
 						posMap = {
 							'top': {'left': (winW - tW) / 2, 'top': 0},
 							'center': {'left': (winW - tW) / 2, 'top': (winH - tH) / 2},
