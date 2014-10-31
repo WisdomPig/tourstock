@@ -38,8 +38,9 @@
 .our_business_img {position: absolute;width: 90%;max-width: 944px;}
 .our_business_text {position: absolute;width: 70%;max-width: 780px;}
 
-.offset_fix {display: none;}
-.text {color: #fff;z-index: 10;line-height: 1.6em;}
+.offset_fix {display: none;z-index: 10;}
+.title {z-index: 14;}
+.text {color: #fff;z-index: 10;line-height: 1.6em;z-index: 12;}
 @media screen and (min-width: 640px) {
 	.text {
 		font-size: 1em;
@@ -62,6 +63,7 @@
 .our_email, .portal {color: #fff885;text-decoration: underline;}
 .our_partner_bg_left, .our_partner_bg_right {position: absolute;width: 90%;max-width: 1000px;}
 .our_partner_img {position: absolute;width: 100%;max-width: 1000px;}
+.our_partner_img img {width: 100%;}
 .our_partner_bg_left, .our_partner_bg_right {
 	position: absolute;
 	bottom: 0;
