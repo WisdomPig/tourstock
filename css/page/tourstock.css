@@ -38,23 +38,6 @@
 .our_business_img {position: absolute;width: 90%;max-width: 944px;}
 .our_business_text {position: absolute;width: 70%;max-width: 780px;}
 
-.offset_fix {display: none;z-index: 10;}
-.title {z-index: 14;}
-.text {color: #fff;z-index: 10;line-height: 1.6em;z-index: 12;}
-@media screen and (min-width: 640px) {
-	.text {
-		font-size: 1em;
-	}
-}
-@media screen and (max-width: 640px) {
-	.text {
-		font-size: 0.6em;
-	}
-	.c_label {
-		width: 40px;
-	}
-}
-
 /* our people */
 .our_people_title {position: absolute;width: 18%;max-width: 233px;height: 34px;}
 .our_people_text {position: absolute;width: 70%;max-width: 780px;}
@@ -167,3 +150,20 @@
 .contact_list p {float: left;}
 .contact_info {position: absolute;top: 32%;left: 5%;}
 .c_label {width: 70px;height: 16px;}
+
+.offset_fix {display: none;z-index: 10;}
+.title {z-index: 14;}
+.text {color: #fff;z-index: 10;line-height: 1.6em;z-index: 12;}
+@media screen and (min-width: 640px) {
+	.text {
+		font-size: 1em;
+	}
+}
+@media screen and (max-width: 640px) {
+	.text {
+		font-size: 0.6em;
+	}
+	.c_label {
+		width: 50px;
+	}
+}
