@@ -105,10 +105,10 @@
 								</ul>
 							</div>
 						</div>
-						<i class="rocket"></i>
 					</div>
 				</div>
 				<img class="offset_fix wave" src="img/wave.png" src="img/title-events.png" data-rate="1" data-o-width="1979" data-o-height="210" data-pos="bottom">
+				<img class="offset_fix rocket" src="img/rocket.png"  data-rate="0.2" data-o-width="250" data-o-height="415" data-pos="bottom">
 			</section>
 			<section data-index="6" class="section contact_section" id="contactSection">
 				<div class="contact_us">
@@ -161,17 +161,34 @@
 		$(function($, win, doc, undefined) {
 			$('#fullpage').fullpage({
 				onLeave: function(index, nextIndex, direction){
+					//our business increase
 					if (nextIndex == 4) {
-						setTimeout(function() {
+						var timer = setTimeout(function() {
 							$('.line').animate({
 								'top': '-=30px' 
 							}, 1200);
+							clearTimeout(timer);
 						}, 1500);
 					}
-
 					if (index == 4) {
 						$('.line').animate({
 							'top': '+=30px' 
+						}, 1200);
+					}
+					//events rocket
+					if (nextIndex == 6) {
+						var timer = setTimeout(function() {
+							$('.rocket').animate({
+								'bottom': '+=20px',
+								'left': '+=10px'
+							}, 1200);
+							clearTimeout(timer);
+						}, 1500);
+					}
+					if (index == 6) {
+						$('.rocket').animate({
+							'bottom': '-=20px',
+							'left': '-=10px'
 						}, 1200);
 					}
 				}
