@@ -40,7 +40,7 @@
 .home_img {position: absolute;width: 60%;max-width: 511px;}
 .arrow_down {position: absolute;width: 10%;height: 75px;cursor: pointer;color: #fff;max-width: 60px;}
 .arrow_down_text {text-align: center;font-size: 13px;-webkit-animation: fade 2s ease-in 0s infinite;animation: fade 2s ease-in 0s infinite;}
-.arrow_down_icon {position: absolute;display: block;left: 8px;top: 30px;width: 70%;max-width: 43px;-webkit-animation: slide 2s ease-in 0s infinite;animation: slide 2s ease-in 0s infinite;}
+.arrow_down_icon {position: absolute;display: block;left: 10px;top: 30px;width: 70%;max-width: 43px;-webkit-animation: slide 2s ease-in 0s infinite;animation: slide 2s ease-in 0s infinite;}
 
 /* our business */
 .our_business_title {position: absolute;width: 20%;max-width: 267px;}
