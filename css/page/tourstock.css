@@ -138,17 +138,17 @@
 .swipe {overflow: hidden;visibility: hidden;position: relative;}
 .swipe-wrap {overflow: hidden;position: relative;}
 .swipe-wrap > li {float:left;width:100%;position: relative;}
-.prev_events, .next_events {cursor: pointer;position: absolute;z-index: 100;top: 48%;left: 10px;width: 3%;max-width: 16px;}
+.prev_events, .next_events {display: none;cursor: pointer;position: absolute;z-index: 100;top: 48%;left: 10px;width: 3%;max-width: 16px;}
 .next_events {left: auto;right: 10px;}
 .wave {position:absolute;width: 100%;}
 
 /* contact us */
 .contact_us_earth {position: absolute;width: 50%;max-width: 519px;}
-.contact_list {position: absolute;width: 80%;max-width: 800px;height: 50%;max-height: 519px;padding-top: 10%;}
+.contact_list {position: absolute;width: 60%;max-width: 600px;height: 50%;max-height: 519px;padding-top: 10%;}
 .contact_us_title {position: absolute;width: 50%;max-width: 250px;top: 20%;left: 15%;}
 .contact_list div {overflow: hidden;}
 .contact_list p {float: left;}
-.contact_info {position: absolute;top: 32%;left: 5%;}
+.contact_info {position: absolute;top: 32%;left: 10%;}
 .c_label {width: 70px;height: 16px;}
 
 /* common */
