@@ -16,13 +16,13 @@
 .browsehappy > a {color: #ff9;border-bottom: 1px dotted #ff9;}
 
 /* top navigation */
-.nav {position: fixed;top: 0;left: 0;height: 56px;width: 100%;z-index: 10001;}
+.nav {position: fixed;top: 0;left: 0;width: 100%;z-index: 10001;}
 .nav_mask {position: absolute;width: 100%;height: 100%;background-color: #fff;opacity: 0.8;}
-.nav_inner {position: relative;z-index: 2;width: 1000px;margin: 0 auto;height: 100%;}
-.nav_logo {float: left;width: 196px;height: 44px;margin-top: 8px;}
-.nav_list {float: left;margin-left: 60px;}
+.nav_inner {position: relative;z-index: 2;height: 100%;}
+.nav_logo {width: 100%;}
 .nav_list li {float: left;}
-.nav_list li a {display: block;height: 56px;line-height: 56px;color: #333;font-size: 11px;padding: 0 15px;}
+li[data-menuanchor="page1"] {width: 19.6%}
+.nav_list li a {display: block;color: #333;}
 .nav_list a.nav_current {color: #fff;background-color: #646464;}
 .nav_list li a:hover {background-color: #646464;color: #fff;}
 
