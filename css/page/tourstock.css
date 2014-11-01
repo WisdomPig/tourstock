@@ -1,3 +1,10 @@
+/* animate */
+@-webkit-keyframes fade {0% {opacity: 0.8;} 100% {opacity: 0.3}}
+@-moz-keyframes fade {0% {opacity: 0.8;} 100% {opacity: 0.3}}
+@-o-keyframes fade {0% {opacity: 0.8;} 100% {opacity: 0.3}}
+@-ms-keyframes fade {0% {opacity: 0.8;} 100% {opacity: 0.3}}
+@keyframes fade {0% {opacity: 0.8;} 100% {opacity: 0.3}}
+
 /* old browser tips */
 .browsehappy {position: fixed;width: 100%;height: 60px;line-height: 60px;text-align: center;bottom: 0;left: 0;background-color: #ff6600;z-index: 100000;font-size: 14px;color: #fff;}
 .browsehappy > a {color: #ff9;border-bottom: 1px dotted #ff9;}
@@ -8,9 +15,9 @@
 .nav_logo {float: left;width: 196px;height: 44px;background-repeat: no-repeat;background-position: 0 -78px;margin-top: 8px;}
 .nav_list {float: left;margin-left: 60px;}
 .nav_list li {float: left;}
-.nav_list li a {display: block;height: 56px;line-height: 56px;color: #333;font-size: 11px;padding: 0 15px;-webkit-transition:all 0.5s linear;-moz-transition:all 0.5s linear;-o-transition:all 0.5s linear;-ms-transition:all 0.5s linear;transition:all 0.5s linear;}
+.nav_list li a {display: block;height: 56px;line-height: 56px;color: #333;font-size: 11px;padding: 0 15px;}
 .nav_list a.nav_current {color: #fff;background-color: #646464;}
-.nav_list li a:hover {background-color: #646464;color: #fff;-webkit-transition: background-color 0.2s linear;}
+.nav_list li a:hover {background-color: #646464;color: #fff;}
 
 /* section common */
 .section {position: relative;width: 100%;overflow: hidden;}
@@ -26,8 +33,8 @@
 /* home page */
 .home_img {position: absolute;width: 60%;max-width: 511px;}
 .arrow_down {position: absolute;width: 10%;height: 75px;cursor: pointer;color: #fff;max-width: 60px;}
-.arrow_down_text {text-align: center;font-size: 13px;visibility: hidden;opacity: 0.7;filter: alpha(opacity: 70);-webkit-transition: all 1s linear;}
-.arrow_down_icon {position: absolute;display: block;left: 8px;top: 30px;width: 70%;opacity: 0.7;filter: alpha(opacity: 70);max-width: 43px;}
+.arrow_down_text {text-align: center;font-size: 13px;transition: fade 1s ease-in 1s;}
+.arrow_down_icon {position: absolute;display: block;left: 8px;top: 30px;width: 70%;max-width: 43px;}
 
 /* our business */
 .our_business_title {position: absolute;width: 20%;max-width: 267px;}
