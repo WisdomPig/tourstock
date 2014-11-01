@@ -14,7 +14,7 @@
 		<!--[if lt IE 9]>
 		<p class="browsehappy">You are using an old version of browser. For the best Tourstock experience, please <a target="_blank" href="http://browsehappy.com/">update your browser.</a></p>
 		<![endif]-->
-		<div class="nav clearfix">
+		<!-- <div class="nav clearfix">
 			<div class="nav_mask"></div>
 			<div class="nav_inner">
 				<ul id="nav" class="nav_list clearfix">
@@ -31,7 +31,18 @@
 					<li data-menuanchor="page7"><a class="nav_a text" href="#page6">CONTACT US</a></li>
 				</ul>
 			</div>
-		</div>
+		</div> -->
+		<nav id="nav" class="nav">
+			<ul>
+				<li data-menuanchor="page1" class="active"><a href="#page1"></a></li>
+				<li data-menuanchor="page2"><a href="#page2"></a></li>
+				<li data-menuanchor="page3"><a href="#page3"></a></li>
+				<li data-menuanchor="page4"><a href="#page4"></a></li>
+				<li data-menuanchor="page5"><a href="#page5"></a></li>
+				<li data-menuanchor="page6"><a href="#page6"></a></li>
+				<li data-menuanchor="page7"><a href="#page7"></a></li>
+			</ul>
+		</nav>
 		<div id="fullpage">
 			<section class="section home_section" id="page1">
 				<img class="offset_fix home_img" src="img/index.png" data-rate="0.6" data-o-width="511" data-o-height="178" data-pos="center">
@@ -163,8 +174,8 @@
 		<script type="text/javascript">
 		$(function($, win, doc, undefined) {
 			$('#fullpage').fullpage({
-				/*anchors: ['page1', 'page2', 'page3', 'page4', 'page5', 'page6', 'page7'],
-				menu: '#nav',*/
+				anchors: ['page1', 'page2', 'page3', 'page4', 'page5', 'page6', 'page7'],
+				menu: '#nav',
 				onLeave: function(index, nextIndex, direction){
 					//our business increase
 					if (nextIndex == 4) {
