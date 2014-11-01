@@ -14,25 +14,25 @@
 		<!--[if lt IE 9]>
 		<p class="browsehappy">You are using an old version of browser. For the best Tourstock experience, please <a target="_blank" href="http://browsehappy.com/">update your browser.</a></p>
 		<![endif]-->
-		<!-- <div class="nav clearfix">
+		<div class="nav clearfix">
 			<div class="nav_mask"></div>
 			<div class="nav_inner">
 				<ul id="nav" class="nav_list clearfix">
-					<li data-menuanchor="page1" class="active">
-						<a href="#page1">
+					<li data-menuanchor="index" class="active">
+						<a href="#index">
 							<img class="nav_logo" src="img/logo.png" >
 						</a>
 					</li>
-					<li data-menuanchor="page2"><a class="nav_a text" href="#page1">OUR BUSINESS</a></li>
-					<li data-menuanchor="page3"><a class="nav_a text" href="#page2">OUR PEOPLE</a></li>
-					<li data-menuanchor="page4"><a class="nav_a text" href="#page3">BECOME OUR PARTNER</a></li>
-					<li data-menuanchor="page5"><a class="nav_a text" href="#page4">WE ARE HIRING</a></li>
-					<li data-menuanchor="page6"><a class="nav_a text" href="#page5">EVENTS</a></li>
-					<li data-menuanchor="page7"><a class="nav_a text" href="#page6">CONTACT US</a></li>
+					<li data-menuanchor="our-business"><a class="nav_a text" href="#our-business">OUR BUSINESS</a></li>
+					<li data-menuanchor="our-people"><a class="nav_a text" href="#our-people">OUR PEOPLE</a></li>
+					<li data-menuanchor="become-our-partner"><a class="nav_a text" href="#become-our-partner">BECOME OUR PARTNER</a></li>
+					<li data-menuanchor="we-are-hiring"><a class="nav_a text" href="#we-are-hiring">WE ARE HIRING</a></li>
+					<li data-menuanchor="events"><a class="nav_a text" href="#events">EVENTS</a></li>
+					<li data-menuanchor="contact-us"><a class="nav_a text" href="#contact-us">CONTACT US</a></li>
 				</ul>
 			</div>
-		</div> -->
-		<nav id="nav" class="nav">
+		</div>
+		<!-- <nav id="nav" class="nav">
 			<ul>
 				<li data-menuanchor="index" class="active"><a href="#"></a></li>
 				<li data-menuanchor="our-business"><a href="#"></a></li>
@@ -42,7 +42,7 @@
 				<li data-menuanchor="events"><a href="#"></a></li>
 				<li data-menuanchor="contact-us"><a href="#"></a></li>
 			</ul>
-		</nav>
+		</nav> -->
 		<div id="fullpage">
 			<section class="section home_section">
 				<img class="offset_fix home_img" src="img/index.png" data-rate="0.6" data-o-width="511" data-o-height="178" data-pos="center">
@@ -177,6 +177,16 @@
 				anchors: ['index', 'our-business', 'our-people', 'become-our-partner', 'we-are-hiring', 'events', 'contact-us'],
 				menu: '#nav',
 				onLeave: function(index, nextIndex, direction){
+					//index
+					if (nextIndex == 1) {
+						$('.nav').animate({
+							top: '-59px'
+						}, 300);
+					} else {
+						$('.nav').animate({
+							top: 0
+						}, 300);
+					}
 					//our business increase
 					if (nextIndex == 4) {
 						var timer = setTimeout(function() {
