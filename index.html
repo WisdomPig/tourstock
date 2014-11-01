@@ -15,41 +15,46 @@
 		<p class="browsehappy">You are using an old version of browser. For the best Tourstock experience, please <a target="_blank" href="http://browsehappy.com/">update your browser.</a></p>
 		<![endif]-->
 		<div class="nav clearfix">
+			<div class="nav_mask"></div>
 			<div class="nav_inner">
-				<a href="javascript:;" class="nav_logo"></a>
-				<ul class="nav_list clearfix">
-					<li><a class="nav_a" data-index="1" href="javascript:;">OUR BUSINESS</a></li>
-					<li><a class="nav_a" data-index="2" href="javascript:;">OUR PEOPLE</a></li>
-					<li><a class="nav_a" data-index="3" href="javascript:;">BECOME OUR PARTNER</a></li>
-					<li><a class="nav_a" data-index="4" href="javascript:;">WE ARE HIRING</a></li>
-					<li><a class="nav_a" data-index="5" href="javascript:;">EVENTS</a></li>
-					<li><a class="nav_a" data-index="6" href="javascript:;">CONTACT US</a></li>
+				<ul id="nav" class="nav_list clearfix">
+					<li data-menuanchor="page1" class="active">
+						<a href="#page1">
+							<img class="nav_logo" src="img/logo.png" >
+						</a>
+					</li>
+					<li data-menuanchor="page2"><a class="nav_a" href="#page1">OUR BUSINESS</a></li>
+					<li data-menuanchor="page3"><a class="nav_a" href="#page2">OUR PEOPLE</a></li>
+					<li data-menuanchor="page4"><a class="nav_a" href="#page3">BECOME OUR PARTNER</a></li>
+					<li data-menuanchor="page5"><a class="nav_a" href="#page4">WE ARE HIRING</a></li>
+					<li data-menuanchor="page6"><a class="nav_a" href="#page5">EVENTS</a></li>
+					<li data-menuanchor="page7"><a class="nav_a" href="#page6">CONTACT US</a></li>
 				</ul>
 			</div>
 		</div>
 		<div id="fullpage">
-			<section data-index="0" class="section home_section" id="homeSection">
+			<section class="section home_section" id="page1">
 				<img class="offset_fix home_img" src="img/index.png" data-rate="0.6" data-o-width="511" data-o-height="178" data-pos="center">
 				<div id="arrowDown" class="offset_fix arrow_down" data-rate="0.1" data-o-width="60" data-o-height="75" data-pos="bottom">
 					<p class="arrow_down_text">MOUSE</p>
 					<img class="arrow_down_icon" src="img/arrow-icon.png">
 				</div>
 			</section>
-			<section class="section business_section" id="businessSection">
+			<section class="section business_section" id="page2">
 				<div class="our_business">
 					<img class="offset_fix our_business_title" src="img/title-our-business.png" data-rate="0.2" data-o-width="267" data-o-height="33" data-pos="top" data-ver-offset="0.1">
-					<img class="offset_fix our_business_img" src="img/our-business.png" data-rate="0.9" data-o-width="944" data-o-height="324" data-pos="center">
+					<img class="offset_fix our_business_img" src="img/our-business.png" data-rate="0.9" data-o-width="951" data-o-height="324" data-pos="center">
 					<p class="offset_fix our_business_text text" data-rate="0.7" data-o-width="780" data-o-height="75" data-pos="bottom" data-ver-offset="0.1">Tourstock Inc. is an OTA based in New York USA, with offices in Hong Kong, Beijing and Shenzhen, China. We’re a team of travel-loving engineers and developers, specializing in providing Chinese travelers with all-around travel services for their overseas tours.</p>
 				</div>
 			</section>
-			<section class="section people_section" id="peopleSction">
+			<section class="section people_section" id="page3">
 				<div class="our_people">
 					<img class="offset_fix our_people_title title" src="img/title-our-people.png" data-rate="0.18" data-o-width="233" data-o-height="33" data-pos="top" data-ver-offset="0.1">
 					<p class="offset_fix our_people_text text" data-rate="0.7" data-o-width="780" data-o-height="260" data-pos="center">We are a team of travel-loving engineers, program and business developers. We are well-equipped with<br/>expertise in e-commerce, network technology, and online-travel business. Most important of all, we understand<br/>Chinese consumers and have extensive experiences and connections in the travel industry in China.<br/><br/><br/>We “hand-pick” and “stock” travel services/products that are most<br/>interesting to Chinese travelers, aiming to become the ultimate tour<br/>warehouse for the ever growing number of Chinese travelers who<br/>just love, love, and love to see the world. </p>
 					<img class="offset_fix our_people_img" src="img/people.png" data-rate="0.9" data-o-width="944" data-o-height="376" data-pos="bottom">
 				</div>
 			</section>
-			<section class="section partner_section" id="partnerSection">
+			<section class="section partner_section" id="page4">
 				<div class="our_partner">
 					<img class="offset_fix our_partner_title title" src="img/title-be-partner.png" data-rate="0.9" data-o-width="944" data-o-height="33" data-pos="top" data-ver-offset="0.03">
 					<p class="offset_fix our_partner_text text" data-rate="0.9" data-o-width="944" data-o-height="260" data-pos="top"><br/><br/><br/><br/>Tour Operators, Consolidators, DMOs, Shopping Malls, Activity Providers...<br/>We'd love to hear from you and share with you the business opportunity of<br/>the fast growing outbound travel market in China. You are more than welcome<br/>to contact us via the email : <span class="our_email">info@tourstock.com</span></p>
@@ -64,9 +69,9 @@
 						<img class="line" src="img/increase2014.png">
 				</div>
 			</section>
-			<section class="section hiring_section" id="hiringSection">
+			<section class="section hiring_section" id="page5">
 				<div class="we_are_hiring">
-					<img class="offset_fix hiring_title title" src="img/title-hiring.png" data-rate="0.22" data-o-width="290" data-o-height="33" data-pos="top" data-ver-offset="0.06">
+					<img class="offset_fix hiring_title title" src="img/title-hiring.png" data-rate="0.22" data-o-width="290" data-o-height="33" data-pos="top" data-ver-offset="0.1">
 					<div class="offset_fix hiring_img" data-rate="1" data-o-width="1000" data-o-height="508" data-pos="center">
 						<div class="hiring_box">
 							<img src="img/hire-web.jpg">
@@ -74,16 +79,16 @@
 						<div class="hiring_box even">
 							<img src="img/hire-ios.jpg">
 						</div>
-						<div class="hiring_box">
+						<div class="hiring_box bottom">
 							<img src="img/hire-andriod.jpg">
 						</div>
-						<div class="hiring_box even">
+						<div class="hiring_box even bottom">
 							<img src="img/hire-pm.jpg">
 						</div>
 					</div>
 				</div>
 			</section>
-			<section class="section events_section" id="eventsSection">
+			<section class="section events_section" id="page6">
 				<div class='events_wrapper'>
 					<div class="events">
 						<img class="offset_fix events_title title" src="img/title-events.png" data-rate="0.1" data-o-width="133" data-o-height="33" data-pos="top" data-ver-offset="0.03">
@@ -110,7 +115,7 @@
 				<img class="offset_fix wave" src="img/wave.png" data-rate="1" data-o-width="1979" data-o-height="210" data-pos="bottom">
 				<img class="offset_fix rocket" src="img/rocket.png"  data-rate="0.2" data-o-width="250" data-o-height="415" data-pos="bottom">
 			</section>
-			<section class="section contact_section" id="contactSection">
+			<section class="section contact_section" id="page7">
 				<div class="contact_us">
 					<img class="offset_fix contact_us_earth" src="img/earth.png" data-rate="0.5" data-o-width="519" data-o-height="519" data-pos="center">
 					<div class="offset_fix contact_list" data-rate="0.6" data-o-width="600" data-o-height="519" data-pos="center">
@@ -157,6 +162,8 @@
 		<script type="text/javascript">
 		$(function($, win, doc, undefined) {
 			$('#fullpage').fullpage({
+				anchors: ['page1', 'page2', 'page3', 'page4', 'page5', 'page6', 'page7'],
+				menu: '#nav',
 				onLeave: function(index, nextIndex, direction){
 					//our business increase
 					if (nextIndex == 4) {
@@ -236,6 +243,11 @@
 			$('.next_events').click(function(e) {
 				e.preventDefault();
 				eventsSwipe.next()
+			});
+
+			//index arrow down
+			$('#arrowDown').click(function() {
+				$.fn.fullpage.moveSectionDown()
 			});
 		}(jQuery, window, document));
 		</script>
