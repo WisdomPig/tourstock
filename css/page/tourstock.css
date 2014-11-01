@@ -84,13 +84,13 @@
 .events {position: relative;height: 100%;margin: 0 auto;}
 .events_title {position: absolute;width: 10%;max-width: 133px;}
 .events_text {position: relative;z-index: 999;padding: 5% 60px 0 60px;}
-.events_text_first {padding-top: 20%;}
+.events_text_first {padding-top: 24%;}
 .rocket {position: absolute;width: 20%;max-width: 250px;}
 .swipe-wrapper {position: relative;width: 100%;max-width: 1000px;margin: 0 auto;z-index: 12;}
 .swipe {overflow: hidden;visibility: hidden;position: relative;}
 .swipe-wrap {overflow: hidden;position: relative;}
 .swipe-wrap > li {float:left;width:100%;position: relative;}
-.prev_events, .next_events {display: none;cursor: pointer;position: absolute;z-index: 100;top: 48%;left: 10px;width: 3%;max-width: 16px;}
+.prev_events, .next_events {display: none;cursor: pointer;position: absolute;z-index: 100;top: 60%;left: 10px;width: 3%;max-width: 16px;}
 .next_events {left: auto;right: 10px;}
 .wave {position:absolute;width: 100%;}
 
@@ -108,4 +108,13 @@
 .title {z-index: 14;}
 .text {color: #fff;z-index: 10;line-height: 1.6em;z-index: 12;}
 @media screen and (min-width: 640px) {.text {font-size: 1em;}}
-@media screen and (max-width: 640px) {.text {font-size: 0.6em;}.c_label {width: 50px;}}
+@media screen and (max-width: 640px) {
+	.text {font-size: 0.6em;}
+	.c_label {width: 50px;}
+	.nav {height: 30px;}
+	.nav_inner {width: 100%;}
+	.nav_list {margin-left: 0;}
+	.nav li[data-menuanchor="index"] {display: none;}
+	.nav li {width: 16.6%;height: 30px;line-height: 30px;}
+	.nav_list li a {height: 30px;line-height: 30px;text-overflow: ellipsis;white-space: nowrap;overflow: hidden;}
+}
