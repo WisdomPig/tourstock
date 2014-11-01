@@ -95,10 +95,10 @@ li[data-menuanchor="page1"] {width: 19.6%;max-width: 196px;}
 /* contact us */
 .contact_us_earth {position: absolute;width: 50%;max-width: 519px;}
 .contact_list {position: absolute;width: 60%;max-width: 600px;height: 50%;max-height: 519px;padding-top: 10%;}
-.contact_us_title {position: absolute;width: 50%;max-width: 250px;top: 18%;left: 10%;}
+.contact_us_title {position: absolute;width: 50%;max-width: 250px;top: 12%;left: 10%;}
 .contact_list div {overflow: hidden;}
 .contact_list p {float: left;}
-.contact_info {position: absolute;top: 32%;left: 10%;}
+.contact_info {position: absolute;top: 26%;left: 10%;}
 .c_label {width: 70px;height: 16px;}
 
 /* common */
