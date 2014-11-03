@@ -111,10 +111,10 @@
 @media screen and (max-width: 640px) {
 	.text {font-size: 0.6em;}
 	.c_label {width: 50px;}
-	.nav {height: 30px;}
+	.nav {height: 60px;}
 	.nav_inner {width: 100%;}
 	.nav_list {margin-left: 0;}
 	.nav li[data-menuanchor="index"] {display: none;}
-	.nav li {width: 16.6%;height: 30px;line-height: 30px;}
+	.nav li {width: 33.3%;height: 30px;line-height: 30px;text-align: center;}
 	.nav_list li a {height: 30px;line-height: 30px;text-overflow: ellipsis;white-space: nowrap;overflow: hidden;}
 }
